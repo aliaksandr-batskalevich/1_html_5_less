@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+main {
+    min-height: 100vh;
+    margin-top: 80px;
+}
+
+header, footer {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+.blue, .violet, .gray, .orange {
+    width: 200px;
+    height: 100px;
+}
+
+
+.blue {
+    background-color: blue;
+}
+
+.violet {
+    background-color: violet;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+.gray {
+    background-color: gray;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.orange {
+    background-color: orange;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    /*margin-top: -50px;*/
+    transform: translateY(-50%);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
